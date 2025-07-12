@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gerenciador de Tarefas Ágil</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Gerenciador de Tarefas Ágil</h1>
+
+  <section id="task-form">
+    <input type="text" id="task-title" placeholder="Título da tarefa" />
+    <textarea id="task-desc" placeholder="Descrição (opcional)"></textarea>
+    <button id="btn-add">Adicionar Tarefa</button>
+  </section>
+
+  <section id="kanban-board">
+    <div class="column" data-status="todo">
+      <h2>A Fazer</h2>
+      <ul class="task-list" id="todo-list"></ul>
+    </div>
+
+    <div class="column" data-status="inprogress">
+      <h2>Em Progresso</h2>
+      <ul class="task-list" id="inprogress-list"></ul>
+    </div>
+
+    <div class="column" data-status="done">
+      <h2>Concluído</h2>
+      <ul class="task-list" id="done-list"></ul>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
